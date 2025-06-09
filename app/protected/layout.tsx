@@ -1,4 +1,4 @@
-/* import { DeployButton } from "@/components/deploy-button";
+import { DeployButton } from "@/components/deploy-button";
 import { EnvVarWarning } from "@/components/env-var-warning";
 import { AuthButton } from "@/components/auth-button";
 import { ThemeSwitcher } from "@/components/theme-switcher";
@@ -46,4 +46,3 @@ export default function ProtectedLayout({
     </main>
   );
 }
- */

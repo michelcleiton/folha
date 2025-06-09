@@ -3,16 +3,33 @@ import Link from 'next/link';
 
 export default async function Folha() {
   const supabase = await createClient();
-  const { data: dados_pj } = await supabase.from("dados_pj").select("id,nome,rg,cpf")
+  const { data: dados_pj } = await supabase.from("dados_pj").select("")
 
 
   return (
+    /*
     <div className="bg-fuchsia-900 h-full w-full">
-      <pre>{JSON.stringify(dados_pj, null, 2)}</pre>
-    </div>
-    
+      <div className="custom-container flex flex-col">
+        <div className="flex justify-center items-center text-4xl">
+          <h1>Folha de Pagamento</h1>
+        </div>
+        <div className="flex justify-center gap-4 mb-4 p-4">
+          <Link href="/">
+            <button className="custom-button">Início</button>            
+          </Link>
+          <Link href="/folha/novo">
+            <button className="custom-button">Novo Registro</button>
+          </Link>
+        </div>
+        <div className="flex gap-4 float-left">
+          <input type="text" placeholder="Pesquisar" className="custom-input" />
+          <button className="custom-button">Pesquisar</button>
+        </div>
+      </div>
 
-    /* 
+    </div> */
+
+ 
     <section className="flex flex-col h-screen">
       <div className="custom-container flex flex-col">
         <div className="flex justify-center items-center text-4xl">
@@ -58,6 +75,6 @@ export default async function Folha() {
         </table>
       </div>
     </section>
-    */
+    
   )
 } 

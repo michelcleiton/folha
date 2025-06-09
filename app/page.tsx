@@ -1,6 +1,7 @@
 import { Section } from "lucide-react";
 import { PRERENDER_REVALIDATE_ONLY_GENERATED_HEADER } from "next/dist/lib/constants";
 import Link from "next/link";
+
 export default function Home() {
   return (
     <section className="flex flex-col h-screen">

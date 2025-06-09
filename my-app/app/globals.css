@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .custom-container {
+    @apply bg-fuchsia-900 p-6 w-screen;
+  }
+}
+
+@layer components {
+   .custom-button {
+      @apply bg-fuchsia-600 text-white py-2 px-4 rounded-3xl hover:bg-fuchsia-700 transition-colors
+   }
+}
+
+@layer components {
+   .custom-input {
+      @apply text-slate-500 p-2 rounded-2xl hover:bg-slate-200
+   }
+}
+
+@layer components {
+   .custom-div-h1 {
+      @apply flex flex-col p-4 w-72 justify-center items-center bg-fuchsia-600 rounded-2xl text-white text-4xl
+   }
+}
+
+body {
+   color: white;
+   background-color: white;
+   font-family: 'Roboto', sans-serif;
+   
+  }
+

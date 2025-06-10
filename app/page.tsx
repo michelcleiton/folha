@@ -14,6 +14,10 @@ export default function Home() {
             <Link href="/folha">
               <button className="custom-button">Folha de Pagamento</button>
             </Link>
+             <Link href="/folha/novo">
+            <button className="custom-button">Novo Registro</button>
+            </Link>
+            
           </nav>
         </div>
     </section>

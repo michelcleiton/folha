@@ -8,7 +8,7 @@ export default function CadastrarFunc() {
         <button className="custom-button">Ínicio</button>
       </Link>
       </div>
-      <div className="flex flex-col justify-center items-center p-8">
+      <div className="flex flex-col justify-center items-center p-8 bg-white">
         <div className="flex flex-col bg-fuchsia-900 p-8 rounded-2xl border-2 border-black justify-center items-center w-80">
           <div className="custom-div-h1">
             <h1>Dados</h1>

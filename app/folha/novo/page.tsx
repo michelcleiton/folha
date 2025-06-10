@@ -32,119 +32,121 @@ export default function NovoPagamento() {
   }
 
   return (
-    <section className="flex flex-col min-h-screen bg-gray-50">
-      <div className="custom-container flex flex-col">
-      <h1 className="flex justify-center items-center text-4xl">
-        Novo Registro de Pagamento
-      </h1>
-      </div>      
-      <div className="flex justify-center mb-4 p-4">
-        <Link href="/folha">
-          <button className="custom-button">Voltar</button>
-        </Link>
-      </div>
-
-      <div className="w-full max-w-2xl mx-auto text-black p-8 bg-white rounded-lg shadow-md">
-        <form action={handleSubmit} className="space-y-6">
-          <div className="flex flex-col space-y-2">
-            <label htmlFor="nome" className="text-sm font-medium text-gray-700">
-              Nome
-            </label>
-            <input
-              type="text"
-              id="nome"
-              name="nome"
-              required
-              className="p-2 border border-gray-300 rounded-md focus:ring-fuchsia-500 focus:border-fuchsia-500"
-            />
+    <section className="flex flex-col h-screen">
+      <nav className="custom-container relative w-full p-4">
+          <div className="absolute left-4 justify-center items-center py-5">
+            <Link href="/folha">
+              <button className="custom-button w-20 flex justify-center items-center">Voltar</button>
+            </Link>
           </div>
-
-          <div className="flex flex-col space-y-2">
-            <label htmlFor="cpf" className="text-sm font-medium text-gray-700">
-              CPF
-            </label>
-            <input
-              type="text"
-              id="cpf"
-              name="cpf"
-              required
-              className="p-2 border border-gray-300 rounded-md focus:ring-fuchsia-500 focus:border-fuchsia-500"
-            />
+          <div className="flex flex-col items-center justify-center w-full">
+            <h1 className="text-4xl mb-4">Novo Registro</h1>
+            <p className="text-sm text-white">Preencha os campos abaixo para cadastrar um novo funcionário.</p>
           </div>
+      </nav>
+      <div className="flex flex-col bg-slate-100 justify-center items-center p-8 h-[650px]">
+        <div className="flex flex-col bg-white text-black rounded-lg shadow-xl p-4 py-4 mx-auto w-96 h-[550px]">
+          <form action={handleSubmit} className="space-y-1 flex flex-col">
+            <div className="flex flex-col space-y-1">
+              <label htmlFor="nome" className="text-sm font-medium text-gray-700">
+                Nome
+              </label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                className="p-1 border border-gray-300 rounded-md focus:ring-fuchsia-500 focus:border-fuchsia-500"
+              />
+            </div>
 
-          <div className="flex flex-col space-y-2">
-            <label htmlFor="rg" className="text-sm font-medium text-gray-700">
-              RG
-            </label>
-            <input
-              type="text"
-              id="rg"
-              name="rg"
-              required
-              className="p-2 border border-gray-300 rounded-md focus:ring-fuchsia-500 focus:border-fuchsia-500"
-            />
-          </div>
+            <div className="flex flex-col space-y-2">
+              <label htmlFor="cpf" className="text-sm font-medium text-gray-700">
+                CPF
+              </label>
+              <input
+                type="text"
+                id="cpf"
+                name="cpf"
+                required
+                className="p-1 border border-gray-300 rounded-md focus:ring-fuchsia-500 focus:border-fuchsia-500"
+              />
+            </div>
 
-          <div className="flex flex-col space-y-2">
-            <label htmlFor="endereco" className="text-sm font-medium text-gray-700">
-              Endereço
-            </label>
-            <input
-              type="text"
-              id="endereco"
-              name="endereco"
-              required
-              className="p-2 border border-gray-300 rounded-md focus:ring-fuchsia-500 focus:border-fuchsia-500"
-            />
-          </div>
+            <div className="flex flex-col space-y-2">
+              <label htmlFor="rg" className="text-sm font-medium text-gray-700">
+                RG
+              </label>
+              <input
+                type="text"
+                id="rg"
+                name="rg"
+                required
+                className="p-1 border border-gray-300 rounded-md focus:ring-fuchsia-500 focus:border-fuchsia-500"
+              />
+            </div>
 
-          <div className="flex flex-col space-y-2">
-            <label htmlFor="bairro" className="text-sm font-medium text-gray-700">
-              Bairro
-            </label>
-            <input
-              type="text"
-              id="bairro"
-              name="bairro"
-              required
-              className="p-2 border border-gray-300 rounded-md focus:ring-fuchsia-500 focus:border-fuchsia-500"
-            />
-          </div>
+            <div className="flex flex-col space-y-2">
+              <label htmlFor="endereco" className="text-sm font-medium text-gray-700">
+                Endereço
+              </label>
+              <input
+                type="text"
+                id="endereco"
+                name="endereco"
+                required
+                className="p-1 border border-gray-300 rounded-md focus:ring-fuchsia-500 focus:border-fuchsia-500"
+              />
+            </div>
 
-          <div className="flex flex-col space-y-2">
-            <label htmlFor="cidade" className="text-sm font-medium text-gray-700">
-              Cidade
-            </label>
-            <input
-              type="text"
-              id="cidade"
-              name="cidade"
-              required
-              className="p-2 border border-gray-300 rounded-md focus:ring-fuchsia-500 focus:border-fuchsia-500"
-            />
-          </div>
+            <div className="flex flex-col space-y-2">
+              <label htmlFor="bairro" className="text-sm font-medium text-gray-700">
+                Bairro
+              </label>
+              <input
+                type="text"
+                id="bairro"
+                name="bairro"
+                required
+                className="p-1 border border-gray-300 rounded-md focus:ring-fuchsia-500 focus:border-fuchsia-500"
+              />
+            </div>
 
-          <div className="flex flex-col space-y-2">
-            <label htmlFor="estado" className="text-sm font-medium text-gray-700">
-              Estado
-            </label>
-            <input
-              type="text"
-              id="estado"
-              name="estado"
-              required
-              className="p-2 border border-gray-300 rounded-md focus:ring-fuchsia-500 focus:border-fuchsia-500"
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-fuchsia-600 text-white py-2 px-4 rounded-md hover:bg-fuchsia-700 transition-colors"
-          >
-            Salvar
-          </button>  
+            <div className="flex flex-col space-y-2">
+              <label htmlFor="cidade" className="text-sm font-medium text-gray-700">
+                Cidade
+              </label>
+              <input
+                type="text"
+                id="cidade"
+                name="cidade"
+                required
+                className="p-1 border border-gray-300 rounded-md focus:ring-fuchsia-500 focus:border-fuchsia-500"
+              />
+            </div>
+
+            <div className="flex flex-col space-y-2">
+              <label htmlFor="estado" className="text-sm font-medium text-gray-700">
+                Estado
+              </label>
+              <input
+                type="text"
+                id="estado"
+                name="estado"
+                required
+                className="p-1 border border-gray-300 rounded-md focus:ring-fuchsia-500 focus:border-fuchsia-500"
+              />
+            </div>
+            <button
+              type="submit"
+              className="w-full bg-fuchsia-600 text-white py-2 px-4 rounded-md hover:bg-fuchsia-700 transition-colors"
+            >
+              Salvar
+            </button>  
 
 
-        </form>
+          </form>
+        </div>
       </div>
     </section>
   );
